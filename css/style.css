@@ -1,55 +1,76 @@
 /* fine imports __________________ */
 @import url(/css/normalize.css);
+
 @font-face {
-    font-family: 'Klinic-book';
-    src:
-        url('KlinicSlabBook.woff2') format('woff2'),
-        url('KlinicSlabBook.woff') format('woff');
+    font-family: 'klinic_slabbold';
+    src: url('KlinicSlabBold.woff2') format('woff2'),
+         url('KlinicSlabBold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
 }
+
+@font-face {
+    font-family: 'klinic_slabbook';
+    src: url('KlinicSlabBook.woff2') format('woff2'),
+         url('KlinicSlabBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'klinic_slablight_italic';
+    src: url('KlinicSlabLightIt.woff2') format('woff2'),
+         url('KlinicSlabLightIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 
 /* body __________________________ */
 
 html, body {
-	font-family: 'Klinic-book', sans-serif;
+	font-family: 'klinic_slabbook', sans-serif;
 	line-height: 1.5em;
     font-size: 16px;
-	color: #2a2a2a;
+	color: #263277;
 	text-rendering: optimizeLegibility;
 	font-smooth:always;
 	-webkit-font-smoothing: subpixel-antialiased;
+    background: #eee;
 	}
 
 /* links __________________________ */
 a {
 	text-decoration:none;
-	color:#1a40bf;
+	color: #bf1a49;
+    font-family: 'klinic_slabbold';
 	font-weight: bold;
 	}
 a:link {
-    -webkit-tap-highlight-color: #335eee;
+    -webkit-tap-highlight-color: #bf1a49;
     -webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	transition: 0.5s; }
-a:visited { color:#932aac;}
-a:hover{ color: #e309db;}
+a:visited { color:#bf1a49;}
+a:hover{ color: #aa9d7b;}
 
 /* typography __________________________ */
 
-h1, h2, h3, h4, h5, h6 { font-weight: 400;}
-h1 { font-size: 3.25rem; line-height: 0.3em; }
-h2 { font-size: 2.625rem; line-height: 0.4em; }
-h3 { font-size: 2.125rem; line-height: 0.5em; }
-h4 { font-size: 1.625rem; line-height: 0.6em; }
-h5 { font-size: 1.125rem; line-height: 0.6em; }
-h6 { font-size: 1rem; line-height: 0.52em;}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'klinic_slablight_italic';
+    color: #aa9d7b;
+    margin: 0.4rem;
+    }
+h1 { font-size: 3.5rem; line-height: 0.3em; text-align: center;}
+h2 { font-size: 2.625rem; line-height: 0.88em; }
 
-ol { list-style-type: square; margin-left: 0;}
-ul { list-style-type: none; margin-left: 0;}
+ol { list-style-type: decimal; margin-left: 0;}
+ul { list-style-type: circle; margin-left: 0;}
 li {margin-left: 0;}
 p { }
-em, small { font-size: 0.8rem; }
+em, small { font-size: 0.8rem; font-family: 'klinic_slabbold'}
 ins { }
 mark {  }
 blockquote, q { }
@@ -67,30 +88,18 @@ figcaption {}
 summary {}
 
 /* layout __________________________ */
-header, section, footer { padding: 1rem;}
 main { }
-header { }
+header { background: #fff; }
+    .intro { padding: 4rem 0; }
 hgroup {}
 menu {}
 nav {}
-    nav li { display: inline;}
-section {}
-article { width: 88%; margin: 0 auto; }
+section { }
+    section.project { padding-bottom: 2rem;}
+article, footer header { width: 88%; margin: 0 auto; }
 aside {}
 figure {}
-footer { background: #eee;}
-hr {
-    margin: 2rem;
-    border: 0.0625rem solid #eee;
-    }
-
-/* eww, tables __________________________ */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	}
-table {} th {} tr {} td {}
-
+footer { padding: 2rem 0.8rem; background: #fff; }
 
 /* forms __________________________ */
 form {}
@@ -108,6 +117,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"],button {
     background: #eee;
 	}
 button:hover { background: #2ce2b1; color: #eee; }
+
 /* media __________________________ */
 img {  }
 .cover {object-fit: cover; }
@@ -129,7 +139,7 @@ video {}
     article { float: left; width: 50%; margin: 0 auto; padding: 1 rem 2rem;}
     }
 @media screen and (min-width: 900px) {
-    article { float: left; width: 40%; margin: 0 auto; padding: 1 rem 2rem;}
+    /*article { float: left; width: 40%; margin: 0 auto; padding: 1 rem 2rem;}*/
     section { padding: 2rem; }
     }
 
