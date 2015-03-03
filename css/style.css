@@ -63,7 +63,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #aa9d7b;
     margin: 0.4rem;
     }
-h1 { font-size: 3.5rem; line-height: 0.3em; text-align: center;}
+h1 {
+    font-size: 3.5rem;
+    line-height: 2em;
+    text-align: center;
+    }
 h2 { font-size: 2.625rem; line-height: 0.88em; }
 
 ol { list-style-type: decimal; margin-left: 0;}
@@ -90,13 +94,14 @@ summary {}
 /* layout __________________________ */
 main { }
 header { background: #fff; }
-    .intro { padding: 4rem 0; }
+    .intro { padding: 2rem 1rem; }
+    .intro img {width: 0.625rem;}
 hgroup {}
 menu {}
 nav {}
 section { }
     section.project { padding-bottom: 2rem;}
-article, footer header { width: 88%; margin: 0 auto; }
+article, footer header, aside { width: 88%; margin: 0 auto; }
 aside {}
 figure {}
 footer { padding: 2rem 0.8rem; background: #fff; }
@@ -136,11 +141,10 @@ video {}
 
 /* let's be repsonsive (mobile first- move up when done editing)__________________________ */
 @media screen and (min-width: 480px) {
-    article { float: left; width: 50%; margin: 0 auto; padding: 1 rem 2rem;}
+
     }
 @media screen and (min-width: 900px) {
-    /*article { float: left; width: 40%; margin: 0 auto; padding: 1 rem 2rem;}*/
-    section { padding: 2rem; }
+
     }
 
 /* print is dead __________________________

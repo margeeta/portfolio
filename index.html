@@ -9,17 +9,24 @@
 
 <body>
    	<header class="container  intro">
+      <a href="#footer"><img src="img/info.svg" /></a>
         <h1>IVY KNIGHT</h1>
     </header>
 
 
 <section class="container project">
-         <img
-	srcset="/img/castle_large.png  1920w,
-	        /img/castle_med.png  960w,
-	        /img/castle_small.png   480w"
-	src="/img/castle_med.png"
-	alt="Castle Header image">
+    <picture>
+	   <source
+		  media="(min-width: 36em)"
+            srcset="/img/project-2thrive_large.png 1920w,
+	           /img/project-2thrive_med.png 960w,
+	           /img/project-2thrive_small.png 480w"/>
+	   <source
+		  srcset="/img/project-2thrive_small.png  480w" />
+	   <img
+		  src="/img/project-2thrive_med.png"
+		  alt="Project Image" />
+    </picture>
 
     <article>
             <h2>Project</h2>
@@ -29,19 +36,21 @@
 </section>
 
     <!-- footer -->
-    <footer class="container">
+    <footer class="container" id="footer">
       <header>
-            <em>ux &#8226; ui &#8226; front-end development &#8226; illustration &#8226; book design</em>
+            <em>ux/ui &#8226; development &#8226; illustration &#8226; book design</em>
             <h2>IVY KNIGHT IS A NATIVE AUSTINITE AND NERD PURSUING A CAREER IN INTERACTIVE DESIGN.</h2>
      </header>
-        <article>
-            <section>
+
+            <article>
             <p>She graduated with a BFA in communication design from Texas State University with honors, and has six    years of experience in design.</p>
 <p>Some clients during this time include FOX, the CW, Susan Miller, Reebok, AT&T, Washington Post, and Jeep.</p>
 <p>Ivy is currently working with the awesome people at <a href="phunware.com">Phunware</a> as a UX Designer.</p>
-            </section>
-            <section>
-            More work side projects and social interaction:
+<p>More formal introductions, the resume: <a href="#">Download</a> it, Print It, Paste it on your cat.</p>
+<p>Best method of contact is <a href="mailto:margeeta@gmail.com">email</a>.</p>
+            </article>
+            <aside>
+                Side projects and social interaction:
                 <ul>
                     <li><a href="#">@margeeta</a></li>
                     <li><a href="#">dribble</a></li>
@@ -51,9 +60,7 @@
                     <li><a href="#">github</a></li>
                     <li><a href="#">email</a></li>
                 </ul>
-Of course the resume: Download it, Print, Paste it on your cat.
-            </section>
-        </article>
+            </aside>
 
     </footer>
 
