@@ -94,8 +94,13 @@ summary {}
 /* layout __________________________ */
 main { }
 header { background: #fff; }
-    .intro { padding: 2rem 1rem; }
-    .intro img {width: 0.5rem;}
+    .intro { padding: 2rem 1rem 4rem 1rem; }
+    #ic_info {width: 0.5rem;}
+    .info:hover {fill: #aa9d7b;
+        -webkit-transition: 0.5s;
+	    -moz-transition: 0.5s;
+	    transition: 0.5s;
+    }
 hgroup {}
 menu {}
 nav {}
