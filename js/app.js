@@ -4,7 +4,7 @@
 
 
 app.controller('portfolioCtrl', function($scope, $http){
-    $httpBackend.get('/js/projects.json').success(function(data) {
+    $http.get('/js/projects.json').success(function(data) {
         $scope.projects = data;
 });
 })();
