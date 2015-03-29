@@ -1,0 +1,19 @@
+<section class="container project">
+    <picture>
+	    <source
+		  media="(min-width: 36em)"
+            ng-srcset="/img/project-{{project.image}}_large.png 1920w,
+	           /img/project-{{project.image}}_med.png 960w,
+	           /img/project-{{project.image}}_small.png 480w"/>
+	   <source
+		  ng-srcset="/img/project-{{project.image}}_small.png  480w" />
+	   <img
+		  ng-src="/img/project-{{project.image}}_med.png"
+		  alt="Project Image" />
+    </picture>
+    <article>
+            <em>{{project.tag}}</em>
+            <h2>{{project.name | uppercase }}</h2>
+        <p>{{project.description}}</p>
+    </article>
+</section>

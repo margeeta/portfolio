@@ -1,0 +1,12 @@
+[
+        {
+        name: '2Thrive',
+        image: '2thrive',
+        tag: 'tag • tag • tag',
+        description: 'string of text', },
+        {
+        name: 'Project Two',
+        image: '2thrive',
+        tag: 'tag',
+        description: 'string of text', }
+]
