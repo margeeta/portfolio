@@ -15,27 +15,9 @@
         <h1>IVY KNIGHT</h1>
     </header>
 
-<section ng-repeat="project in projects">
-<section class="container project">
-    <picture>
-	    <source
-		  media="(min-width: 36em)"
-            ng-srcset="/img/project-{{project.image}}_large.png 1920w,
-	           /img/project-{{project.image}}_med.png 960w,
-	           /img/project-{{project.image}}_small.png 480w"/>
-	   <source
-		  ng-srcset="/img/project-{{project.image}}_small.png  480w" />
-	   <img
-		  ng-src="/img/project-{{project.image}}_med.png"
-		  alt="Project Image" />
-    </picture>
-    <article>
-            <em>{{project.tag}}</em>
-            <h2>{{project.name | uppercase }}</h2>
-        <p>{{project.description}}</p>
-    </article>
-</section>
-    </section>
+
+<project ng-repeat="project in projects"></project>
+
     <!-- footer -->
     <footer class="container" id="footer">
       <header>
@@ -53,15 +35,7 @@
             </article>
             <aside>
                 <p>Side projects and social interaction:</p>
-                <ul>
-                    <li><a href="#">@margeeta</a></li>
-                    <li><a href="#">dribble</a></li>
-                    <li><a href="#">tumblr</a></li>
-                    <li><a href="#">instagram</a></li>
-                    <li><a href="#">pinterest</a></li>
-                    <li><a href="#">github</a></li>
-                    <li><a href="#">email</a></li>
-                </ul>
+                    <links></links>
             </aside>
 
     </footer>
@@ -70,5 +44,6 @@
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
 
 </html>
