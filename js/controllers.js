@@ -4,8 +4,11 @@
 
 var portfolioControllers = angular.module('portfolioControllers', []);
 
-portfolioControllers.controller('portfolioCtrl', function($scope, $http){
-    $scope.projects = [
+portfolioControllers.controller('portfolioCtrl', function($scope, $http, $timeout){
+
+$scope.projects = [];
+$timeout(function(){
+$scope.projects = [
         {
         name: 'Project One',
         image: '2thrive',
@@ -51,12 +54,13 @@ portfolioControllers.controller('portfolioCtrl', function($scope, $http){
         image: '2thrive',
         tag: 'tag',
         description: 'string of text', }
-];
-$scope.links = [
+];}, 300)
+    $scope.links = [
             {name: "@margeeta", url: "http://www.twitter.com/margeeta"},
             {name: 'dribble', url: 'https://dribbble.com/ADOBEsweet'},
             {name: 'tumblr', url: 'http://loneliestunicorn.tumblr.com/'},
             {name: 'github', url: 'https://github.com/margeeta'}
     ];
+
 
 });

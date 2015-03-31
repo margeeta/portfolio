@@ -151,15 +151,6 @@ video {}
   clear:both;
 }
 
-
-/* let's be repsonsive (mobile first- move up when done editing)__________________________ */
-@media screen and (min-width: 480px) {
-
-    }
-@media screen and (min-width: 900px) {
-
-    }
-
 /* print is dead __________________________
 
 @media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }

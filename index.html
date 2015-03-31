@@ -9,14 +9,14 @@
 
 <body ng-controller="portfolioCtrl">
    	<header class="container intro">
-      <a href="#footer">
+      <a href="#" scroll-to="footer" duration="2000" easing="easeInOutCubic">
         <svg version="1.1" id="ic_info" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 69.9" enable-background="new 0 0 24.2 69.9" xml:space="preserve">
 <g><path class="info" fill="#BF1F4A" d="M5,47.1l3.5-19.6H2.1l1.4-8h16.6l-5,28.1c-0.5,3.2,0.6,4.1,3,4.1c1.4,0,2.8-0.3,4-0.7l-1.3,7.5 c-1.7,0.5-4,0.9-6.4,0.9C5.4,59.4,4,53.3,5,47.1z M9.9,6.9c0-3.7,3.1-6.7,6.8-6.7s6.7,3.1,6.7,6.7s-3.1,6.8-6.7,6.8 S9.9,10.6,9.9,6.9z"/><path fill="#BF1F4A" d="M0,69.6v-4.5h24.2v4.5H0z"/></g></svg></a>
         <h1>IVY KNIGHT</h1>
     </header>
 
 
-<project ng-repeat="project in projects"></project>
+<project></project>
 
     <!-- footer -->
     <footer class="container" id="footer">
@@ -45,5 +45,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script type="text/javascript" src="js/directives.js"></script>
+    <script type="text/javascript" src="js/ngFxBundle.js"></script>
+    <script type="text/javascript" src="js/angular-smooth-scroll.min.js"></script>
 
 </html>
